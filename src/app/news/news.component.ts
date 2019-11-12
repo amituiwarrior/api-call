@@ -10,7 +10,7 @@ import { stringify } from 'querystring';
 export class NewsComponent implements OnInit {
   post: any = {};
   comments: any = [];
-  url: any = 'https://www.reddit.com/r/FORTnITE/comments/duei8w/hallownite_fort_building_winners/.json';
+  url: any = 'https://www.reddit.com/r/csgo/comments/drrxoo/counterstrike_global_offensive_update_for_11419/.json';
 
   commentPerPage: number = 1;
   commentsLoaded: any = [];
