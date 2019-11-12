@@ -1,0 +1,19 @@
+.container-fluid {
+    background-color: #f9f8fd;
+    padding: 30px;
+    .head-box {
+        border-radius: 8px;
+        box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.03);
+        padding: 8px;
+        background: #fff;
+        margin-bottom: 20px;
+        h2 {
+            font-size: 28px;
+            color: #262939;
+        }
+        p {
+            font-size: 18px;
+            color: #59637d;
+        }
+    }
+}

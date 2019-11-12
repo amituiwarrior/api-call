@@ -1,1 +1,132 @@
 /* You can add global styles to this file, and also import other style files */
+
+.container-fluid {
+    .head-box-info {
+        h1 {
+            font-size: 32px;
+            color: #262939;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+            &:after {
+                position: absolute;
+                content: '';
+                bottom: -5px;
+                width: 100%;
+                right: 0px;
+                background-color: #333333;
+                height: 3px;
+                border-radius: 4px;
+            }
+        }
+        h3 {
+            font-size: 32px;
+            color: #262939;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+            &:after {
+                position: absolute;
+                content: '';
+                bottom: -5px;
+                width: 100%;
+                right: 0px;
+                background-color: #333333;
+                height: 3px;
+                border-radius: 4px;
+            }
+        }
+        ul {
+            margin-bottom: 50px;
+            padding-inline-start: 25px;
+            li {
+                color: #59637d;
+                margin-bottom: 15px;
+                list-style-type: square;
+                background: #fff;
+                padding: 5px;
+                border-radius: 4px;
+                box-shadow: 0 4px 14px 0 rgba(38, 41, 57, 0.18);
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &:nth-child(even) {
+                    background: #fff;
+                }
+                &:nth-child(odd) {
+                    background: #fff;
+                }
+                p {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    .comments {
+        h4 {
+            font-size: 22px;
+            color: #262939;
+            border-bottom: solid 2px #262939;
+            display: inline-block;
+        }
+        .comment-list {
+            border: solid 1px #ccc;
+            margin-bottom: 15px;
+            padding: 10px;
+            color: #59637d;
+            background: #fff;
+            border-radius: 4px;
+            box-shadow: 0 4px 14px 0 rgba(38, 41, 57, 0.18);
+            .author-name {
+                margin-bottom: 0;
+                color: #000;
+                font-size: 14px;
+            }
+            h3 {
+                font-size: 18px;
+                font-weight: 100;
+            }
+            .comment-reply-list {
+                margin-left: 35px;
+                border-radius: 4px;
+                box-shadow: 0 4px 14px 0 rgba(38, 41, 57, 0.18);
+                background: #f9f8fd;
+                padding: 5px 10px;
+                margin-bottom: 10px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                p {
+                    margin-bottom: 4px;
+                    display: inline-block;
+                    color: #000;
+                }
+                h3 {
+                    font-size: 18px;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+}
+
+.cust-btn {
+    color: #fff !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ed3330;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: block;
+    border: none;
+    transition: all 0.4s ease 0s;
+    &:hover {
+        background: #434343;
+        letter-spacing: 1px;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+        box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+        transition: all 0.4s ease 0s;
+    }
+}
