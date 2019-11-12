@@ -2,12 +2,18 @@
 
 .container-fluid {
     .head-box-info {
+        a {
+            word-break: break-all;
+        }
         h1 {
             font-size: 32px;
             color: #262939;
             margin-bottom: 20px;
             position: relative;
             display: inline-block;
+            @media screen and (max-width: 767px) {
+                font-size: 20px;
+            }
             &:after {
                 position: absolute;
                 content: '';
@@ -25,6 +31,9 @@
             margin-bottom: 20px;
             position: relative;
             display: inline-block;
+            @media screen and (max-width: 767px) {
+                font-size: 20px;
+            }
             &:after {
                 position: absolute;
                 content: '';
@@ -39,6 +48,9 @@
         ul {
             margin-bottom: 50px;
             padding-inline-start: 25px;
+            @media screen and (max-width: 767px) {
+                margin-bottom: 20px;
+            }
             li {
                 color: #59637d;
                 margin-bottom: 15px;
@@ -68,6 +80,9 @@
             color: #262939;
             border-bottom: solid 2px #262939;
             display: inline-block;
+            @media screen and (max-width: 767px) {
+                font-size: 16px;
+            }
         }
         .comment-list {
             border: solid 1px #ccc;
@@ -81,10 +96,16 @@
                 margin-bottom: 0;
                 color: #000;
                 font-size: 14px;
+                @media screen and (max-width: 767px) {
+                    font-size: 12px;
+                }
             }
             h3 {
                 font-size: 18px;
                 font-weight: 100;
+                @media screen and (max-width: 767px) {
+                    font-size: 14px;
+                }
             }
             .comment-reply-list {
                 margin-left: 35px;
@@ -104,6 +125,9 @@
                 h3 {
                     font-size: 18px;
                     font-weight: 100;
+                    @media screen and (max-width: 767px) {
+                        font-size: 14px;
+                    }
                 }
             }
         }
@@ -121,6 +145,9 @@
     display: block;
     border: none;
     transition: all 0.4s ease 0s;
+    @media screen and (max-width: 767px) {
+        padding: 10px;
+    }
     &:hover {
         background: #434343;
         letter-spacing: 1px;

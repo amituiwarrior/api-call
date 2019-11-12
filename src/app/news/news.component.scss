@@ -1,6 +1,6 @@
 .container-fluid {
     background-color: #f9f8fd;
-    padding: 30px;
+    padding: 15px;
     .head-box {
         border-radius: 8px;
         box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.03);
@@ -10,10 +10,16 @@
         h2 {
             font-size: 28px;
             color: #262939;
+            @media screen and (max-width: 767px) {
+                font-size: 18px;
+            }
         }
         p {
             font-size: 18px;
             color: #59637d;
+            @media screen and (max-width: 767px) {
+                font-size: 14px;
+            }
         }
     }
 }
